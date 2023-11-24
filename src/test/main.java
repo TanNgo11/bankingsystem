@@ -5,6 +5,8 @@
 package test;
 
 import dao.impl.EmployeeDAO;
+import java.util.Date;
+import model.EmployeeModel;
 
 /**
  *
@@ -12,11 +14,28 @@ import dao.impl.EmployeeDAO;
  */
 public class main {
 
-    public static void main(String[] args) {
-        EmployeeDAO dao = new EmployeeDAO();
-        
-        System.out.println(dao.findByEmployeeId(1).toString());
-        System.out.println(dao.findByEmployeeId(1).getName());
-    }
+//    public static void main(String[] args) {
+//        Date date = new Date();
+//        java.sql.Date sqlDate = new java.sql.Date(date.getTime());
+//        EmployeeDAO dao = new EmployeeDAO();
+//        EmployeeModel model = new  EmployeeModel();
+//        
+//        model.setEmployee_id("emp00131");
+//        model.setSalary(1000.0);
+//        model.setJoining_date(sqlDate);
+//        model.setSsn("10011");
+//        model.setName("tan23");
+//        model.setDob(sqlDate);
+//        model.setStreet("hdhd");
+//        model.setCity("bd");
+//        model.setProvince("bd");
+//        
+//        System.out.println(dao.findLastEmployeeId());
+//    
+//                
+//        
+//     
+//    }
+//    
     
 }

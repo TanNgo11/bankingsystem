@@ -4,15 +4,18 @@
  */
 package dao;
 
-import java.util.Date;
+import model.CustomerModel;
 import model.EmployeeModel;
 
 /**
  *
  * @author TAN
  */
-public interface IEmployeeDAO extends GenericDAO<EmployeeModel>{
-    EmployeeModel findByEmployeeId(String employeeId);
-    Long save(EmployeeModel employee);
-    String findLastEmployeeId();
+public interface ICustomerDAO extends GenericDAO<CustomerModel>{
+    CustomerModel findByCustomerId(String customerId);
+
+    Long save(CustomerModel customer);
+
+    String findLastCustomerId();
+    
 }

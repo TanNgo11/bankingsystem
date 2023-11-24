@@ -28,7 +28,7 @@ public class EmployeeMapper implements RowMapper<EmployeeModel> {
             employee.setStreet(rs.getString("street"));
             employee.setCity(rs.getString("city"));
             employee.setProvince(rs.getString("province"));
-            employee.setEmployee_id(rs.getInt("employee_id"));
+            employee.setEmployee_id(rs.getString("employee_id"));
 
         } catch (Exception e) {
         }

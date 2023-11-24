@@ -11,17 +11,17 @@ import java.util.Date;
  * @author TAN
  */
 public class EmployeeModel extends PersonModel{
-    private int employee_id;
+    private String employee_id;
     private Double salary;
     private Date joining_date;
     private int manager_id;
     private int customer_id;
 
-    public long getEmployee_id() {
+    public String getEmployee_id() {
         return employee_id;
     }
 
-    public void setEmployee_id(int employee_id) {
+    public void setEmployee_id(String employee_id) {
         this.employee_id = employee_id;
     }
 

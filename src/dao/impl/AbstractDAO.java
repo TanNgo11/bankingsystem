@@ -122,6 +122,7 @@ public class AbstractDAO<T> implements GenericDAO<T> {
             if (resultSet.next()) {
                 id = resultSet.getLong(1);
             }
+         
             connection.commit();
             return id;
         } catch (SQLException e) {
@@ -195,12 +196,11 @@ public class AbstractDAO<T> implements GenericDAO<T> {
                 } else if (parameter instanceof String) {
                     statement.setString(index, (String) parameter);
                 } else if (parameter instanceof Integer) {
-
                     statement.setInt(index, (Integer) parameter);
                 } else if (parameter instanceof Timestamp) {
                     statement.setTimestamp(index, (Timestamp) parameter);
                 } else if (parameter instanceof Date) {
-                    statement.setDate(index, (java.sql.Date) (Date) parameter);
+                    statement.setDate(index, (java.sql.Date) parameter);
                 } else if (parameter instanceof Double) {
                     statement.setDouble(index, (Double) parameter);
                 }
